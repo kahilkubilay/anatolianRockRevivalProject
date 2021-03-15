@@ -1,0 +1,245 @@
+/*default*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Header Component style properties*/
+.header-menu {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 2vh;
+}
+
+.header-menu .head-logo {
+  width: 50%;
+}
+
+.header-menu .sub-headers {
+  text-align: center;
+  align-items: center;
+}
+
+.header-menu .sub-headers .category, .allStory-capsule {
+  padding: 1vh 2.5vh;
+  background-color: #e0ece4;
+  border-radius: 1.2vh;
+  margin-right: 2vh;
+}
+
+.header-menu .sub-headers a, .allStory-capsule {
+  color: #056674;
+  font-size: 2.3vh;
+  font-weight: bold;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.header-menu .sub-headers a:hover {
+  text-decoration: underline;
+}
+
+.main-active {
+  color: #ff4b5c!important;
+}
+
+.header-menu,
+.header-menu>* {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*Header Component style properties*/
+
+/*Album backgorund & Story area properties*/
+.content-container {
+  display: flex;
+}
+
+.content-container img.poster,
+.poster-capsule,
+.download-view {
+  width: 60vh;
+  height: auto;
+  box-shadow: 12px 12px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 1vh;
+  border: 2px solid #000;
+  margin: 1%;
+}
+
+.content-container .content-info {
+  background-color: #e0ece4;
+  padding: 1vh 2.5vh;
+  border-radius: 1.2vh;
+  box-shadow: 8px 8px 3px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  display: flex;
+  max-height: auto;
+  margin-top: 1%!important;
+}
+
+.content-container .content-header,
+.content-container .content-info {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #056674;
+}
+
+.content-container .content-info {
+  margin: 1vh;
+  color: #056674;
+  font-size: 1.5vh;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.content-container .content-info .content-capsule {
+  margin-top: 2.1vh;
+}
+
+
+.content-container .content-info p {
+  text-indent: 12px;
+  line-height: 18px;
+}
+
+.content-container .content-header {
+  font-size: 2.3vh;
+  text-align: center;
+}
+
+.artistList {
+  margin-top: 3.2vh;
+}
+
+.artistList li {
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+}
+
+.artistList li img {
+  width: 32px;
+  margin: 0.6vh;
+}
+
+.anatolianInfo {
+  padding: 20px;
+  background-color: purple;
+  border-radius: 20px;
+  margin-top: 20px;
+  width: auto;
+}
+
+.anatolianInfo, .anatolianInfo a {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.3vh;
+}
+
+/*Album backgorund & Story area properties*/
+/*artists area style properties*/
+
+/*poster area*/
+.posters {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 20px !important;
+}
+
+.posters-area {
+  margin: 1%;
+}
+
+.posters .poster-capsule {
+  display: flex;
+  height: auto;
+  box-shadow: none !important;
+  cursor: pointer;
+}
+
+.posters .poster-capsule:hover {
+  z-index: 1;
+}
+
+.image-description {
+  position: absolute;
+  right: 12vh;
+}
+
+.download-view {
+  margin: 0 !important;
+}
+
+.download-button {
+  text-decoration: none;
+  background-color: #e0ece4;
+  cursor: pointer;
+  border: none;
+  color: #056674;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  width: 40%;
+  margin: auto;
+  transition-duration: 1s;
+  font-size: 2.3vh;
+  font-weight: bold;
+  margin-top: 13px;
+}
+
+.download-button:hover {
+  width: 100%;
+  color: #ff4b5c;
+}
+/*poster area*/
+
+/*tag area*/
+.tag-area{
+  display: block;
+  max-width: 75%;
+  margin: auto auto;
+  text-align: center;
+}
+
+.tag-area li {
+  display: inline-block;
+}
+
+.tag-area .tag-title{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2vh;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  background-color: #e0ece4;
+  color: #056674;
+  margin: 0.4vh!important;
+  padding: 0.5vh 1vh;
+  border-radius: 10px;
+  line-height: 4vh;
+  transition-duration: 0.2s;
+  width: 160px; 
+  justify-content: center;
+  
+}
+
+.tag-area .tag-title:hover {
+  color: #ff4b5c!important;
+}
+/*tag area*/
+
+/*storyteller styles*/
+.allStory-capsule {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.storyteller {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*storyteller styles*/
