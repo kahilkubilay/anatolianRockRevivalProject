@@ -5,7 +5,7 @@ class Stories extends React.Component {
   constructor(props) {
       super(props);
       this.state = {
-          showImage: './posters/bülent-ve-korhan-ayrilik-anisi.jpg',
+          showImage: require(`${ './images/posters/bülent-ve-korhan-ayrilik-anisi.jpg'}`).default,
           showAlt: 'Bülent ve Korhan - Ayrılık Anısı Poster ',
       };
   
@@ -20,9 +20,12 @@ class Stories extends React.Component {
     }
 
     allPoster = TrackList.map((info) => {
+      let posterCapsule = info.image;
+
       return <div className='posters' onClick={this.handleClick}>
-              <img className='poster-capsule' src={info.image} alt={info.title + ' poster'}/>
-          </div>
+        <img className='poster-capsule' src={require(`${ posterCapsule}`).default} 
+        alt={info.title + ' poster'}/>
+      </div>
   });
 
   render() {
