@@ -7,17 +7,16 @@ const Story = () => {
     const getStory = TrackList[keyState];
     const story = TrackList[keyState];
     const storyMaterials = Object.keys(story.artist).map((part) => {
-        let imageSource = '../icons/' + part + '.png';
+        let imageSource = require('./images/icons/' + part + '.png');
 
         return <li className={part}>
-            <img src={imageSource} alt='#'/>
-                {story.artist[part]}
-            </li>
+            <img src={imageSource.default} alt={part + ' icon'}/>{story.artist[part]}
+        </li>
     });
 
     return (
         <div className='content-container'>
-            <img src={getStory.image} alt={getStory.title} className='poster'/>
+            <img src={require(`${getStory.image}`).default} alt={getStory.title} className='poster'/>
             <p className='content-info'>
                 <h2 className='content-header'>{getStory.title}</h2>
                 {getStory.info}
