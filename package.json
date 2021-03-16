@@ -13,7 +13,7 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.0"
   },
-  "homepage": "https://kahilkubilay.github.io/anatolianRockRevivalProject/",
+  "homepage": "https://kahilkubilay.github.io/anatolianRockRevivalProject",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

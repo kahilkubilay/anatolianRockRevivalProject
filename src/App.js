@@ -21,7 +21,8 @@ class App extends React.Component  {
                 <ul className='sub-headers'>
                     <NavLink  to='/'>
                         <li>
-                            <img src='./logo.png' className='head-logo' alt='Anatolian Rock Revival Project Logo'/>
+                            <img src={require('./images/logo.png').default} className='head-logo' 
+                              alt='Anatolian Rock Revival Project Logo'/>
                         </li>
                     </NavLink>
                     <NavLink to='/poster' className='category' activeClassName="main-active">
