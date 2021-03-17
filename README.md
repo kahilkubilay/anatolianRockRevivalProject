@@ -5,8 +5,6 @@ live: https://kahilkubilay.github.io/anatolianRockRevivalProject/
 
 # Getting Started with Create React App
 
-live: ...
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
